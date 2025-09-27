@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- SEO בסיסי -->
-    <title>אנג'ל מורים – יועצת נדל"ן בכפר יונה | ליווי אישי בקנייה ומכירה</title>
+    <!-- SEO בסיסי (ממוטב) -->
+    <title>אנג'ל מורים – יועצת נדל"ן בכפר יונה | מכירה וקנייה בליווי אישי</title>
     <meta name="description"
-        content="יועצת נדל&quot;ן בכפר יונה – המומחיות שלי, הבית הבא שלכם. ליווי אישי, מקצועי ושקוף בקנייה ומכירה של דירות ונכסים בכפר יונה והסביבה.">
+        content="אנג'ל מורים – יועצת נדל&quot;ן בכפר יונה. ליווי אישי ומקצועי במכירה וקנייה של דירות ונכסים בכפר יונה והסביבה. הערכת שווי וניהול מו&quot;מ עד החתימה.">
     <link rel="canonical" href="https://angelmorim.netlify.app/">
     <meta name="robots" content="index, follow">
 
@@ -17,8 +17,9 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Angel Morim Real Estate">
     <meta property="og:title" content="אנג'ל מורים – יועצת נדל&quot;ן בכפר יונה">
-    <meta property="og:description" content="כפר יונה – המומחיות שלי, הבית הבא שלכם. ליווי אישי, מקצועי ושקוף.">
+    <meta property="og:description" content="ליווי אישי ומקצועי במכירה וקנייה של דירות ונכסים בכפר יונה.">
     <meta property="og:image" content="https://angelmorim.netlify.app/images/myimage.jpg">
+    <meta property="og:image:alt" content="אנג'ל מורים – יועצת נדל&quot;ן בכפר יונה">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://angelmorim.netlify.app/">
@@ -52,7 +53,6 @@
             --line: #e5e7eb;
             --shadow: 0 8px 30px rgba(0, 0, 0, .08);
             --radius: 18px;
-            --radius-sm: 12px;
             --max: 1160px;
         }
 
@@ -60,12 +60,127 @@
             box-sizing: border-box
         }
 
+        /* גלילה חלקה לכל הדף */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* קיזוז לעוגנים מתחת ל-header הדביק */
+        section[id],
+        header[id],
+        main [id] {
+            scroll-margin-top: 80px;
+        }
+
+        /* העדפת Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        /* חסימת גלילה עד סיום הטעינה */
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        /* שכבת טעינה */
+        #loading-overlay {
+            position: fixed;
+            inset: 0;
+            background: #fff;
+            display: grid;
+            place-items: center;
+            z-index: 9999;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity .35s ease, visibility .35s ease;
+        }
+
+        body.loaded #loading-overlay {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        #loading-overlay .loader-box {
+            display: grid;
+            gap: 10px;
+            place-items: center;
+            padding: 18px 22px;
+            border-radius: 16px;
+            background: #fff;
+            border: 1px solid var(--line);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+        }
+
+        #loading-overlay .loader-text {
+            font: 600 .95rem/1.3 'Assistant', system-ui, sans-serif;
+            color: #475569;
+        }
+
+        /* בית קווי מקפץ (SVG + CSS) */
+        .house-wrapper {
+            display: grid;
+            place-items: center;
+            gap: 8px;
+            color: var(--brand);
+            animation: house-bounce 1.2s ease-in-out infinite;
+        }
+
+        .house {
+            display: block;
+        }
+
+        .house-shadow {
+            width: 64px;
+            height: 8px;
+            border-radius: 999px;
+            background: radial-gradient(ellipse at center, rgba(0, 0, 0, .18), rgba(0, 0, 0, 0));
+            transform-origin: center;
+            animation: shadow-squash 1.2s ease-in-out infinite;
+        }
+
+        @keyframes house-bounce {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-8px)
+            }
+        }
+
+        @keyframes shadow-squash {
+
+            0%,
+            100% {
+                transform: scaleX(1);
+                opacity: .55
+            }
+
+            50% {
+                transform: scaleX(.8);
+                opacity: .35
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .house-wrapper,
+            .house-shadow {
+                animation: none !important;
+            }
+        }
+
+        /* בסיס עמוד וטיפוגרפיה */
         html,
         body {
             margin: 0;
             padding: 0;
             background: var(--bg);
-            color: var(--text)
+            color: var(--text);
         }
 
         body {
@@ -104,7 +219,9 @@
 
         img {
             max-width: 100%;
-            display: block
+            display: block;
+            object-fit: cover;
+            object-position: center top;
         }
 
         .wrap {
@@ -141,6 +258,7 @@
             height: 42px;
             border-radius: 50%;
             object-fit: cover;
+            object-position: center top;
             box-shadow: var(--shadow)
         }
 
@@ -228,10 +346,8 @@
             border-radius: var(--radius);
             box-shadow: var(--shadow);
             aspect-ratio: 4/3;
-            object-fit: cover;
             transform: translateY(0);
-            animation: float 6s ease-in-out infinite;
-            object-position: center top;
+            animation: float 6s ease-in-out infinite
         }
 
         @keyframes float {
@@ -364,10 +480,10 @@
 
         @media (max-width:680px) {
             .wrap {
-                padding-inline: 24px;
-                /* מוסיף ריווח נעים מהקצוות */
+                padding-inline: 24px
             }
 
+            /* ריווח נעים מהקצוות במובייל */
             .two {
                 grid-template-columns: 1fr
             }
@@ -378,23 +494,60 @@
         }
     </style>
 
-    <!-- נתוני מבנה (Schema.org) -->
+    <!-- נתוני מבנה (Schema.org) – גרסה מורחבת -->
     <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"RealEstateAgent",
-    "name":"אנג'ל מורים",
-    "image":"https://angelmorim.netlify.app/images/myimage.jpg",
-    "areaServed":"כפר יונה",
-    "url":"https://angelmorim.netlify.app/",
-    "telephone":"+972504743405",
-    "address":{"@type":"PostalAddress","addressLocality":"כפר יונה","addressCountry":"IL"},
-    "sameAs":["https://www.facebook.com/","https://www.instagram.com/"]
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "@id": "https://angelmorim.netlify.app/#business",
+    "name": "אנג'ל מורים",
+    "url": "https://angelmorim.netlify.app/",
+    "image": "https://angelmorim.netlify.app/images/myimage.jpg",
+    "telephone": "+972504743405",
+    "areaServed": "כפר יונה",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "כפר יונה",
+      "addressCountry": "IL"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 32.316,
+      "longitude": 34.933
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }],
+    "sameAs": [
+      "https://www.facebook.com/",
+      "https://www.instagram.com/"
+    ]
   }
   </script>
 </head>
 
 <body>
+
+    <!-- LOADING OVERLAY: בית קווי מקפץ -->
+    <div id="loading-overlay" aria-hidden="true" role="status">
+        <div class="loader-box">
+            <div class="house-wrapper" aria-label="טוען">
+                <svg class="house" viewBox="0 0 72 72" width="72" height="72" aria-hidden="true">
+                    <polyline points="12,28 36,8 60,28" fill="none" stroke="currentColor" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <rect x="18" y="28" width="36" height="34" rx="2" ry="2" fill="none" stroke="currentColor"
+                        stroke-width="3" />
+                    <rect x="32" y="44" width="8" height="18" rx="2" ry="2" fill="none" stroke="currentColor"
+                        stroke-width="3" />
+                </svg>
+                <div class="house-shadow" aria-hidden="true"></div>
+            </div>
+            <div class="loader-text">טוען…</div>
+        </div>
+    </div>
 
     <!-- סרגל עליון -->
     <div class="topbar">
@@ -429,13 +582,11 @@
                     <a class="btn btn--alt" href="tel:0504743405">שיחה טלפונית</a>
                 </div>
             </div>
-            <!-- תמונת הירו: ניתן להחליף לתמונה אחרת לפי הצורך -->
             <img class="hero__img reveal" src="/images/myimage.jpg" alt="אנג'ל מורים – יועצת נדל&quot;ן בכפר יונה">
         </div>
     </header>
 
     <main>
-
         <!-- עליי -->
         <section id="about" class="wrap section">
             <div class="grid two">
@@ -474,9 +625,11 @@
         <section id="props" class="wrap section">
             <h2 class="reveal">נכסים נבחרים</h2>
             <div class="grid three" style="margin-top:12px">
-                <!-- כרטיס 1 – בהתאם לטקסט שלך -->
                 <article class="card prop reveal">
-                    <img src="/images/property-1.jpg" alt="פנטהאוז 4 חד' בפרויקט שרונה – כפר יונה">
+                    <picture>
+                        <source srcset="/images/property-1.webp" type="image/webp">
+                        <img src="/images/property-1.jpg" alt="פנטהאוז 4 חד' בפרויקט שרונה – כפר יונה" loading="lazy">
+                    </picture>
                     <h3>פנטהאוז יוקרתי 4 חד' (במקור 5) – פרויקט שרונה</h3>
                     <div class="meta"><span>135 מ״ר + מרפסת 32 מ״ר</span><span>נוף פתוח</span></div>
                     <ul class="small" style="margin:0 1rem 0 0">
@@ -486,15 +639,20 @@
                         <li>3 חדרי רחצה • תריסים חשמליים • תשתיות חכמות</li>
                     </ul>
                 </article>
-                <!-- ניתן להוסיף נכסים נוספים עם תמונות משלך -->
                 <article class="card prop reveal">
-                    <img src="/images/property-2.jpg" alt="דירה משודרגת במרכז כפר יונה">
+                    <picture>
+                        <source srcset="/images/property-2.webp" type="image/webp">
+                        <img src="/images/property-2.jpg" alt="דירה משודרגת במרכז כפר יונה" loading="lazy">
+                    </picture>
                     <h3>דירה משודרגת במרכז כפר יונה</h3>
                     <div class="meta"><span>מיקום מצוין למשפחות</span><span>שדרוגים איכותיים</span></div>
                     <p class="small">פתרון מגורים נוח ושקט עם גישה מהירה לשירותים קהילתיים.</p>
                 </article>
                 <article class="card prop reveal">
-                    <img src="/images/property-3.jpg" alt="דירת גן מרווחת בכפר יונה">
+                    <picture>
+                        <source srcset="/images/property-3.webp" type="image/webp">
+                        <img src="/images/property-3.jpg" alt="דירת גן מרווחת בכפר יונה" loading="lazy">
+                    </picture>
                     <h3>דירת גן מרווחת</h3>
                     <div class="meta"><span>חצר פרטית</span><span>מתאים למשפחות</span></div>
                     <p class="small">מרחב מחייה נעים עם אפשרויות לאירוח וגינון.</p>
@@ -528,9 +686,9 @@
                             rel="noopener">פרופיל</a></p>
                     <p class="small">זמינה לשאלות, הערכות שווי והכוונה ראשונית ללא התחייבות.</p>
                 </div>
-                <!-- טופס Netlify (אופציונלי; נשלח בלי שרת) -->
-                <form class="card reveal" name="contact" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contact">
+
+                <!-- טופס לשליחה ישירה לווטסאפ -->
+                <form id="wa-form" class="card reveal">
                     <label>שם מלא
                         <input type="text" name="name" required>
                     </label>
@@ -545,11 +703,10 @@
                             required></textarea>
                     </label>
                     <button class="btn" type="submit">שליחה</button>
-                    <div class="small">באמצעות שליחת הטופס את/ה מאשר/ת יצירת קשר לצורך טיפול בפנייה.</div>
+                    <div class="small">בלחיצה על “שליחה” תיפתח שיחת ווטסאפ עם פרטי הפנייה שמילאת.</div>
                 </form>
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -558,16 +715,53 @@
         </div>
     </footer>
 
-    <!-- אפקט חשיפה עדינה בעת גלילה -->
+    <!-- סקריפטים -->
     <script>
+        // אפקט חשיפה עדינה בזמן גלילה
         (function () {
-            const els = [...document.querySelectorAll('.reveal')];
+            const els = Array.from(document.querySelectorAll('.reveal'));
             const obs = new IntersectionObserver((entries) => {
                 entries.forEach(e => {
                     if (e.isIntersecting) { e.target.classList.add('show'); obs.unobserve(e.target); }
                 });
             }, { threshold: .12 });
             els.forEach(el => obs.observe(el));
+        })();
+
+        // מסך טעינה – זמן תצוגה מינימלי והסתרה רכה
+        window.addEventListener('load', function () {
+            const MIN_SHOW = 700; // מילישניות – ניתן להתאים (600–900ms נעים לעין)
+            setTimeout(function () { document.body.classList.add('loaded'); }, MIN_SHOW);
+        });
+
+        // טופס וואטסאפ בלבד
+        (function () {
+            const form = document.getElementById('wa-form');
+            const WHATSAPP_TARGET = '972504743405'; // יעד הווטסאפ (ללא סימנים)
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const name = form.elements['name'].value.trim();
+                const phone = form.elements['phone'].value.trim();
+                const email = form.elements['email'].value.trim();
+                const message = form.elements['message'].value.trim();
+
+                if (!name || !phone || !message) {
+                    alert('נא למלא שם, טלפון ותוכן הודעה.');
+                    return;
+                }
+
+                const text =
+                    `בקשה חדשה מהאתר:\n\n` +
+                    `שם: ${name}\n` +
+                    `טלפון: ${phone}\n` +
+                    (email ? `אימייל: ${email}\n\n` : `\n`) +
+                    `הודעה:\n${message}`;
+
+                const url = `https://wa.me/${WHATSAPP_TARGET}?text=${encodeURIComponent(text)}`;
+                window.open(url, '_blank'); // במובייל יפתח אפליקציה, בדסקטופ – WhatsApp Web
+                form.reset();
+            });
         })();
     </script>
 </body>
