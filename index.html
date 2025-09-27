@@ -2,206 +2,536 @@
 <html lang="he" dir="rtl">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- SEO בסיסי (ממוטב) -->
-  <title>אנג'ל מורים – יועצת נדל"ן בכפר יונה | מכירה וקנייה בליווי אישי</title>
-  <meta name="description" content="אנג'ל מורים – יועצת נדל&quot;ן בכפר יונה. ליווי אישי ומקצועי במכירה וקנייה של דירות ונכסים בכפר יונה והסביבה. הערכת שווי וניהול מו&quot;מ עד החתימה.">
-  <link rel="canonical" href="https://angelmorim.netlify.app/">
-  <meta name="robots" content="index, follow">
+    <!-- SEO בסיסי (ממוטב) -->
+    <title>אנג'ל מורים – יועצת נדל"ן בכפר יונה | מכירה וקנייה בליווי אישי</title>
+    <meta name="description"
+        content="אנג'ל מורים – יועצת נדל&quot;ן בכפר יונה. ליווי אישי ומקצועי במכירה וקנייה של דירות ונכסים בכפר יונה והסביבה. הערכת שווי וניהול מו&quot;מ עד החתימה.">
+    <link rel="canonical" href="https://angelmorim.netlify.app/">
+    <link rel="stylesheet" href="/fonts/fonts.css">
 
-  <!-- Open Graph (וואטסאפ/פייסבוק) -->
-  <meta property="og:locale" content="he_IL">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Angel Morim Real Estate">
-  <meta property="og:title" content="אנג'ל מורים – יועצת נדל&quot;ן בכפר יונה">
-  <meta property="og:description" content="ליווי אישי ומקצועי במכירה וקנייה של דירות ונכסים בכפר יונה.">
-  <meta property="og:image" content="https://angelmorim.netlify.app/images/myimage.jpg">
-  <meta property="og:image:alt" content="אנג'ל מורים – יועצת נדל&quot;ן בכפר יונה">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://angelmorim.netlify.app/">
+    <meta name="robots" content="index, follow">
 
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="אנג'ל מורים – יועצת נדל&quot;ן בכפר יונה">
-  <meta name="twitter:description" content="ליווי אישי במכירה/קנייה ושיווק נכסים בכפר יונה.">
-  <meta name="twitter:image" content="https://angelmorim.netlify.app/images/myimage.jpg">
+    <!-- Open Graph (וואטסאפ/פייסבוק) -->
+    <meta property="og:locale" content="he_IL">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Angel Morim Real Estate">
+    <meta property="og:title" content="אנג'ל מורים – יועצת נדל&quot;ן בכפר יונה">
+    <meta property="og:description" content="ליווי אישי ומקצועי במכירה וקנייה של דירות ונכסים בכפר יונה.">
+    <meta property="og:image" content="https://angelmorim.netlify.app/images/myimage.jpg">
+    <meta property="og:image:alt" content="אנג'ל מורים – יועצת נדל&quot;ן בכפר יונה">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://angelmorim.netlify.app/">
 
-  <!-- אייקון אתר (אופציונלי) -->
-  <link rel="icon" href="/favicon.ico">
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="אנג'ל מורים – יועצת נדל&quot;ן בכפר יונה">
+    <meta name="twitter:description" content="ליווי אישי במכירה/קנייה ושיווק נכסים בכפר יונה.">
+    <meta name="twitter:image" content="https://angelmorim.netlify.app/images/myimage.jpg">
 
-  <!-- פונטים -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&family=Assistant:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- אייקון אתר (אופציונלי) -->
+    <link rel="icon" href="/favicon.ico">
 
-  <!-- עיצוב -->
-  <style>
-    :root{
-      --bg:#ffffff; --text:#0f172a; --muted:#475569;
-      --brand:#0b7fab; --brand-2:#0e9cc7; --accent:#f59e0b;
-      --card:#f7f9fb; --line:#e5e7eb; --shadow:0 8px 30px rgba(0,0,0,.08);
-      --radius:18px; --max:1160px;
+    <!-- פונטים -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&family=Assistant:wght@300;400;600&display=swap"
+        rel="stylesheet"> -->
 
-      /* מגבלות גובה לתמונות לתצוגה */
-      --hero-max-h: 280px;  /* תמונת ההירו – כפי שביקשת ~280px */
-      --prop-max-h: 240px;  /* תמונות נכסים בכרטיסים */
-    }
+    <!-- עיצוב -->
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #0f172a;
+            --muted: #475569;
+            --brand: #0b7fab;
+            --brand-2: #0e9cc7;
+            --accent: #f59e0b;
+            --card: #f7f9fb;
+            --line: #e5e7eb;
+            --shadow: 0 8px 30px rgba(0, 0, 0, .08);
+            --radius: 18px;
+            --max: 1160px;
 
-    @media (max-width:680px){
-      :root{
-        --hero-max-h: 220px;
-        --prop-max-h: 200px;
-      }
-    }
+            /* מגבלות גובה לתמונות לתצוגה */
+            --hero-max-h: 280px;
+            /* תמונת ההירו – כפי שביקשת ~280px */
+            --prop-max-h: 240px;
+            /* תמונות נכסים בכרטיסים */
+        }
 
-    *{box-sizing:border-box}
+        @media (max-width:680px) {
+            :root {
+                --hero-max-h: 220px;
+                --prop-max-h: 200px;
+            }
+        }
 
-    /* גלילה חלקה לכל הדף */
-    html{scroll-behavior:smooth;}
+        * {
+            box-sizing: border-box
+        }
 
-    /* קיזוז לעוגנים מתחת ל-header הדביק */
-    section[id], header[id], main [id]{scroll-margin-top:80px;}
+        /* גלילה חלקה לכל הדף */
+        html {
+            scroll-behavior: smooth;
+        }
 
-    /* העדפת Reduced Motion */
-    @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+        /* קיזוז לעוגנים מתחת ל-header הדביק */
+        section[id],
+        header[id],
+        main [id] {
+            scroll-margin-top: 80px;
+        }
 
-    /* חסימת גלילה עד סיום הטעינה */
-    body:not(.loaded){overflow:hidden;}
+        /* העדפת Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
 
-    /* שכבת טעינה */
-    #loading-overlay{
-      position:fixed; inset:0; background:#fff;
-      display:grid; place-items:center; z-index:9999;
-      opacity:1; visibility:visible; transition:opacity .35s ease, visibility .35s ease;
-    }
-    body.loaded #loading-overlay{opacity:0;visibility:hidden;}
-    #loading-overlay .loader-box{
-      display:grid; gap:10px; place-items:center;
-      padding:18px 22px; border-radius:16px; background:#fff;
-      border:1px solid var(--line); box-shadow:0 10px 30px rgba(0,0,0,.08);
-    }
-    #loading-overlay .loader-text{
-      font:600 .95rem/1.3 'Assistant', system-ui, sans-serif; color:#475569;
-    }
+        /* חסימת גלילה עד סיום הטעינה */
+        body:not(.loaded) {
+            overflow: hidden;
+        }
 
-    /* בית קווי מקפץ (SVG + CSS) */
-    .house-wrapper{display:grid; place-items:center; gap:8px; color:var(--brand); animation:house-bounce 1.2s ease-in-out infinite;}
-    .house{display:block;}
-    .house-shadow{
-      width:64px; height:8px; border-radius:999px;
-      background:radial-gradient(ellipse at center, rgba(0,0,0,.18), rgba(0,0,0,0));
-      transform-origin:center; animation:shadow-squash 1.2s ease-in-out infinite;
-    }
-    @keyframes house-bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-    @keyframes shadow-squash{0%,100%{transform:scaleX(1);opacity:.55}50%{transform:scaleX(.8);opacity:.35}}
-    @media (prefers-reduced-motion: reduce){ .house-wrapper,.house-shadow{animation:none!important;} }
+        /* שכבת טעינה */
+        #loading-overlay {
+            position: fixed;
+            inset: 0;
+            background: #fff;
+            display: grid;
+            place-items: center;
+            z-index: 9999;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity .35s ease, visibility .35s ease;
+        }
 
-    /* בסיס עמוד וטיפוגרפיה */
-    html,body{margin:0; padding:0; background:var(--bg); color:var(--text);}
-    body{font-family:'Assistant', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height:1.65}
-    h1,h2,h3{font-family:'Heebo', sans-serif; margin:0 0 .6rem}
-    h1{font-size:clamp(1.8rem, 3.6vw, 2.6rem); line-height:1.25}
-    h2{font-size:clamp(1.3rem, 2.6vw, 1.8rem)}
-    p{margin:.2rem 0 .9rem}
-    a{color:var(--brand); text-decoration:none}
-    a:hover{text-decoration:underline}
-    img{max-width:100%; display:block; object-fit:cover; object-position:center top;}
+        body.loaded #loading-overlay {
+            opacity: 0;
+            visibility: hidden;
+        }
 
-    .wrap a{white-space:nowrap;}
+        #loading-overlay .loader-box {
+            display: grid;
+            gap: 10px;
+            place-items: center;
+            padding: 18px 22px;
+            border-radius: 16px;
+            background: #fff;
+            border: 1px solid var(--line);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+        }
 
-    .wrap{max-width:var(--max); margin-inline:auto; padding-inline:20px}
-    .topbar{
-      position:sticky; top:0; z-index:50;
-      backdrop-filter:saturate(180%) blur(10px);
-      background:rgba(255,255,255,.75);
-      border-bottom:1px solid var(--line)
-    }
-    .nav{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 0}
-    .brand{display:flex; align-items:center; gap:12px}
-    .brand__logo{
-      width:42px; height:42px; border-radius:50%;
-      object-fit:cover; object-position:center top; box-shadow:var(--shadow)
-    }
-    .brand__title{font-weight:700; font-size:1.15rem}
-    .nav__links{display:flex; gap:16px; flex-wrap:wrap}
-    .nav__links a{padding:8px 10px; border-radius:10px}
+        #loading-overlay .loader-text {
+            font: 600 .95rem/1.3 'Assistant', system-ui, sans-serif;
+            color: #475569;
+        }
 
-    .hero{padding:28px 0 18px}
-    .hero__grid{display:grid; grid-template-columns:1.15fr .85fr; gap:28px; align-items:center}
-    .card{background:var(--card); padding:22px; border-radius:var(--radius); box-shadow:var(--shadow)}
-    .hero__subtitle{color:var(--muted); margin:.4rem 0 1rem}
-    .badges{display:flex; gap:10px; flex-wrap:wrap; margin:.4rem 0}
-    .badge{background:#fff; border:1px solid var(--line); padding:6px 10px; border-radius:999px; font-size:.9rem}
-    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
-    .btn{display:inline-block; padding:11px 16px; border-radius:12px; background:var(--brand); color:#fff; font-weight:700; box-shadow:var(--shadow); transition:transform .2s}
-    .btn:hover{transform:translateY(-2px)}
-    .btn--alt{background:var(--brand-2)}
+        /* בית קווי מקפץ (SVG + CSS) */
+        .house-wrapper {
+            display: grid;
+            place-items: center;
+            gap: 8px;
+            color: var(--brand);
+            animation: house-bounce 1.2s ease-in-out infinite;
+        }
 
-    /* >>> הגבלת גודל התמונות — בלי לשנות פריסה <<< */
-    .hero__img{
-      /* נשארת בדיוק באותו מקום; רק מוגבל גובהה בפועל */
-      max-height: var(--hero-max-h);
-      height: auto;
-      width: 100%;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      transform: translateY(0);
-      animation: float 6s ease-in-out infinite;
-      object-fit: cover;
-      object-position: center top;
-    }
-    @keyframes float{50%{transform:translateY(-6px)}}
+        .house {
+            display: block;
+        }
 
-    .section{padding:26px 0}
-    .grid{display:grid; gap:18px}
-    .two{grid-template-columns:repeat(2,1fr)}
-    .three{grid-template-columns:repeat(3,1fr)}
-    .feat{display:flex; gap:12px; align-items:flex-start}
-    .feat i{
-      font-style:normal; background:var(--brand); color:#fff;
-      min-width:28px; height:28px; display:inline-grid; place-items:center; border-radius:8px
-    }
+        .house-shadow {
+            width: 64px;
+            height: 8px;
+            border-radius: 999px;
+            background: radial-gradient(ellipse at center, rgba(0, 0, 0, .18), rgba(0, 0, 0, 0));
+            transform-origin: center;
+            animation: shadow-squash 1.2s ease-in-out infinite;
+        }
 
-    .prop{display:flex; flex-direction:column; gap:10px}
-    .prop picture, .prop img{display:block; width:100%;}
-    .prop img{
-      /* הגבלת גובה רכה לתמונות הכרטיסים */
-      max-height: var(--prop-max-h);
-      height: auto;
-      border-radius:14px;
-      object-fit:cover;
-      object-position:center;
-    }
+        @keyframes house-bounce {
 
-    .prop .meta{display:flex; gap:10px; color:var(--muted); font-size:.95rem}
-    .quote{font-size:1.05rem; background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:18px}
-    .contact{display:grid; grid-template-columns:1fr 1fr; gap:18px}
-    form{display:grid; gap:10px}
-    input,textarea{width:100%; padding:12px 14px; border-radius:12px; border:1px solid var(--line); font:inherit}
-    textarea{min-height:120px; resize:vertical}
-    .small{color:var(--muted); font-size:.92rem}
-    footer{color:#767676; font-size:.92rem; padding:26px 0; border-top:1px solid var(--line); margin-top:16px}
+            0%,
+            100% {
+                transform: translateY(0)
+            }
 
-    .reveal{opacity:0; transform:translateY(12px); transition:opacity .5s ease, transform .5s ease}
-    .reveal.show{opacity:1; transform:none}
+            50% {
+                transform: translateY(-8px)
+            }
+        }
 
-    @media (max-width:980px){
-      .hero__grid{grid-template-columns:1fr}
-      .three{grid-template-columns:1fr}
-      .contact{grid-template-columns:1fr}
-    }
-    @media (max-width:680px){
-      .wrap{padding-inline:24px} /* רווח נעים מהקצה במובייל */
-      .two{grid-template-columns:1fr}
-      .nav__links{display:none}
-    }
-  </style>
+        @keyframes shadow-squash {
 
-  <!-- נתוני מבנה (Schema.org) – גרסה מורחבת -->
-  <script type="application/ld+json">
+            0%,
+            100% {
+                transform: scaleX(1);
+                opacity: .55
+            }
+
+            50% {
+                transform: scaleX(.8);
+                opacity: .35
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .house-wrapper,
+            .house-shadow {
+                animation: none !important;
+            }
+        }
+
+        /* בסיס עמוד וטיפוגרפיה */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        body {
+            font-family: 'Assistant', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Heebo', sans-serif;
+            margin: 0 0 .6rem
+        }
+
+        h1 {
+            font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+            line-height: 1.25
+        }
+
+        h2 {
+            font-size: clamp(1.3rem, 2.6vw, 1.8rem)
+        }
+
+        p {
+            margin: .2rem 0 .9rem
+        }
+
+        a {
+            color: var(--brand);
+            text-decoration: none
+        }
+
+        a:hover {
+            text-decoration: underline
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .wrap a {
+            white-space: nowrap;
+        }
+
+        .wrap {
+            max-width: var(--max);
+            margin-inline: auto;
+            padding-inline: 20px
+        }
+
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(10px);
+            background: rgba(255, 255, 255, .75);
+            border-bottom: 1px solid var(--line)
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 12px 0
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .brand__logo {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center top;
+            box-shadow: var(--shadow)
+        }
+
+        .brand__title {
+            font-weight: 700;
+            font-size: 1.15rem
+        }
+
+        .nav__links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap
+        }
+
+        .nav__links a {
+            padding: 8px 10px;
+            border-radius: 10px
+        }
+
+        .hero {
+            padding: 28px 0 18px
+        }
+
+        .hero__grid {
+            display: grid;
+            grid-template-columns: 1.15fr .85fr;
+            gap: 28px;
+            align-items: center
+        }
+
+        .card {
+            background: var(--card);
+            padding: 22px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow)
+        }
+
+        .hero__subtitle {
+            color: var(--muted);
+            margin: .4rem 0 1rem
+        }
+
+        .badges {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: .4rem 0
+        }
+
+        .badge {
+            background: #fff;
+            border: 1px solid var(--line);
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: .9rem
+        }
+
+        .cta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 11px 16px;
+            border-radius: 12px;
+            background: var(--brand);
+            color: #fff;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+            transition: transform .2s
+        }
+
+        .btn:hover {
+            transform: translateY(-2px)
+        }
+
+        .btn--alt {
+            background: var(--brand-2)
+        }
+
+        /* >>> הגבלת גודל התמונות — בלי לשנות פריסה <<< */
+        .hero__img {
+            /* נשארת בדיוק באותו מקום; רק מוגבל גובהה בפועל */
+            max-height: var(--hero-max-h);
+            height: auto;
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transform: translateY(0);
+            animation: float 6s ease-in-out infinite;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        @keyframes float {
+            50% {
+                transform: translateY(-6px)
+            }
+        }
+
+        .section {
+            padding: 26px 0
+        }
+
+        .grid {
+            display: grid;
+            gap: 18px
+        }
+
+        .two {
+            grid-template-columns: repeat(2, 1fr)
+        }
+
+        .three {
+            grid-template-columns: repeat(3, 1fr)
+        }
+
+        .feat {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start
+        }
+
+        .feat i {
+            font-style: normal;
+            background: var(--brand);
+            color: #fff;
+            min-width: 28px;
+            height: 28px;
+            display: inline-grid;
+            place-items: center;
+            border-radius: 8px
+        }
+
+        .prop {
+            display: flex;
+            flex-direction: column;
+            gap: 10px
+        }
+
+        .prop picture,
+        .prop img {
+            display: block;
+            width: 100%;
+        }
+
+        .prop img {
+            /* הגבלת גובה רכה לתמונות הכרטיסים */
+            max-height: var(--prop-max-h);
+            height: auto;
+            border-radius: 14px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .prop .meta {
+            display: flex;
+            gap: 10px;
+            color: var(--muted);
+            font-size: .95rem
+        }
+
+        .quote {
+            font-size: 1.05rem;
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 18px
+        }
+
+        .contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px
+        }
+
+        form {
+            display: grid;
+            gap: 10px
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 12px;
+            border: 1px solid var(--line);
+            font: inherit
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical
+        }
+
+        .small {
+            color: var(--muted);
+            font-size: .92rem
+        }
+
+        footer {
+            color: #767676;
+            font-size: .92rem;
+            padding: 26px 0;
+            border-top: 1px solid var(--line);
+            margin-top: 16px
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(12px);
+            transition: opacity .5s ease, transform .5s ease
+        }
+
+        .reveal.show {
+            opacity: 1;
+            transform: none
+        }
+
+        @media (max-width:980px) {
+            .hero__grid {
+                grid-template-columns: 1fr
+            }
+
+            .three {
+                grid-template-columns: 1fr
+            }
+
+            .contact {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media (max-width:680px) {
+            .wrap {
+                padding-inline: 24px
+            }
+
+            /* רווח נעים מהקצה במובייל */
+            .two {
+                grid-template-columns: 1fr
+            }
+
+            .nav__links {
+                display: none
+            }
+        }
+    </style>
+
+    <!-- נתוני מבנה (Schema.org) – גרסה מורחבת -->
+    <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
@@ -228,219 +558,240 @@
 
 <body>
 
-  <!-- LOADING OVERLAY: בית קווי מקפץ -->
-  <div id="loading-overlay" aria-hidden="true" role="status">
-    <div class="loader-box">
-      <div class="house-wrapper" aria-label="טוען">
-        <svg class="house" viewBox="0 0 72 72" width="72" height="72" aria-hidden="true">
-          <polyline points="12,28 36,8 60,28" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-          <rect x="18" y="28" width="36" height="34" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="3" />
-          <rect x="32" y="44" width="8" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="3" />
-        </svg>
-        <div class="house-shadow" aria-hidden="true"></div>
-      </div>
-      <div class="loader-text">טוען…</div>
+    <!-- LOADING OVERLAY: בית קווי מקפץ -->
+    <div id="loading-overlay" aria-hidden="true" role="status">
+        <div class="loader-box">
+            <div class="house-wrapper" aria-label="טוען">
+                <svg class="house" viewBox="0 0 72 72" width="72" height="72" aria-hidden="true">
+                    <polyline points="12,28 36,8 60,28" fill="none" stroke="currentColor" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <rect x="18" y="28" width="36" height="34" rx="2" ry="2" fill="none" stroke="currentColor"
+                        stroke-width="3" />
+                    <rect x="32" y="44" width="8" height="18" rx="2" ry="2" fill="none" stroke="currentColor"
+                        stroke-width="3" />
+                </svg>
+                <div class="house-shadow" aria-hidden="true"></div>
+            </div>
+            <div class="loader-text">טוען…</div>
+        </div>
     </div>
-  </div>
 
-  <!-- סרגל עליון -->
-  <div class="topbar">
-    <div class="wrap nav">
-      <div class="brand">
-        <img class="brand__logo" src="/images/myimage.webp" alt="תמונת פרופיל של אנג'ל מורים">
-        <div class="brand__title">אנג'ל מורים – יועצת נדל"ן בכפר יונה</div>
-      </div>
-      <nav class="nav__links" aria-label="ניווט ראשי">
-        <a href="#about">עליי</a>
-        <a href="#props">נכסים</a>
-        <a href="#testimonials">המלצות</a>
-        <a href="#contact">יצירת קשר</a>
-      </nav>
+    <!-- סרגל עליון -->
+    <div class="topbar">
+        <div class="wrap nav">
+            <div class="brand">
+                <img class="brand__logo" src="/images/myimage.webp" alt="תמונת פרופיל של אנג'ל מורים">
+                <div class="brand__title">אנג'ל מורים – יועצת נדל"ן בכפר יונה</div>
+            </div>
+            <nav class="nav__links" aria-label="ניווט ראשי">
+                <a href="#about">עליי</a>
+                <a href="#props">נכסים</a>
+                <a href="#testimonials">המלצות</a>
+                <a href="#contact">יצירת קשר</a>
+            </nav>
+        </div>
     </div>
-  </div>
 
-  <!-- הירו -->
-  <header class="wrap hero">
-    <div class="hero__grid">
-      <div class="card reveal">
-        <h1>כפר יונה – המומחיות שלי, הבית הבא שלכם.</h1>
-        <p class="hero__subtitle">אני מלווה את לקוחותיי באופן אישי, מקצועי ושקוף – עם דגש על הקשבה, דיוק ותשומת לב אמיתית לכל פרט קטן.</p>
-        <div class="badges">
-          <span class="badge">התמקצעות בכפר יונה</span>
-          <span class="badge">ליווי אישי מקצה לקצה</span>
-          <span class="badge">שקיפות מלאה</span>
+    <!-- הירו -->
+    <header class="wrap hero">
+        <div class="hero__grid">
+            <div class="card reveal">
+                <h1>כפר יונה – המומחיות שלי, הבית הבא שלכם.</h1>
+                <p class="hero__subtitle">אני מלווה את לקוחותיי באופן אישי, מקצועי ושקוף – עם דגש על הקשבה, דיוק ותשומת
+                    לב אמיתית לכל פרט קטן.</p>
+                <div class="badges">
+                    <span class="badge">התמקצעות בכפר יונה</span>
+                    <span class="badge">ליווי אישי מקצה לקצה</span>
+                    <span class="badge">שקיפות מלאה</span>
+                </div>
+                <div class="cta" style="margin-top:12px">
+                    <a class="btn" href="https://wa.me/972504743405" target="_blank" rel="noopener">ווטסאפ</a>
+                    <a class="btn btn--alt" href="tel:0504743405">שיחה טלפונית</a>
+                </div>
+            </div>
+            <!-- תמונת הירו — אותו מיקום/מבנה, רק מוגבל גובה -->
+            <img class="hero__img reveal" src="/images/myimage.jpg" alt="אנג'ל מורים – יועצת נדל&quot;ן בכפר יונה">
         </div>
-        <div class="cta" style="margin-top:12px">
-          <a class="btn" href="https://wa.me/972504743405" target="_blank" rel="noopener">ווטסאפ</a>
-          <a class="btn btn--alt" href="tel:0504743405">שיחה טלפונית</a>
+    </header>
+
+    <main>
+        <!-- עליי -->
+        <section id="about" class="wrap section">
+            <div class="grid two">
+                <div class="card reveal">
+                    <h2>עליי</h2>
+                    <p>אני אנג׳ל מורים, יועצת נדל״ן המתמחה בכפר יונה והסביבה. אני מלווה את לקוחותיי באופן אישי, מקצועי
+                        ושקוף – עם דגש על הקשבה, דיוק ותשומת לב אמיתית לכל פרט קטן.</p>
+                    <div class="grid two" style="margin-top:8px">
+                        <div class="feat"><i>✓</i>
+                            <div><strong>דיוק והתאמה</strong><br>אפיון צרכים מדויק למציאת הנכס הנכון.</div>
+                        </div>
+                        <div class="feat"><i>✓</i>
+                            <div><strong>תמחור ושיווק</strong><br>אסטרטגיית תמחור חכמה ושיווק נכסים איכותי.</div>
+                        </div>
+                        <div class="feat"><i>✓</i>
+                            <div><strong>ניהול מו"מ</strong><br>ליווי מקצועי עד לחתימה בביטחון מלא.</div>
+                        </div>
+                        <div class="feat"><i>✓</i>
+                            <div><strong>שקיפות</strong><br>ידע זמין, עדכונים שוטפים וניהול התהליך מקצה לקצה.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <h2>שירותים</h2>
+                    <ul class="small" style="margin:0 1rem 0 0">
+                        <li>מכירת דירות ונכסים בכפר יונה</li>
+                        <li>איתור וקנייה של דירות חלום למשפחות</li>
+                        <li>ייעוץ למשקיעים והערכת תשואות</li>
+                        <li>ליווי מול יועצי משכנתאות ובעלי מקצוע</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- נכסים נבחרים -->
+        <section id="props" class="wrap section">
+            <h2 class="reveal">נכסים נבחרים</h2>
+            <div class="grid three" style="margin-top:12px">
+                <article class="card prop reveal">
+                    <picture>
+                        <source srcset="/images/property-1.webp" type="image/webp">
+                        <img src="/images/property-1.jpg" alt="פנטהאוז 4 חד' בפרויקט שרונה – כפר יונה">
+                    </picture>
+                    <h3>פנטהאוז יוקרתי 4 חד' (במקור 5) – פרויקט שרונה</h3>
+                    <div class="meta"><span>135 מ״ר + מרפסת 32 מ״ר</span><span>נוף פתוח</span></div>
+                    <ul class="small" style="margin:0 1rem 0 0">
+                        <li>תקרות גבוהות ותכנון חכם</li>
+                        <li>מטבח משודרג עם אי ומכשירי פרימיום</li>
+                        <li>מערכת מיזוג מתקדמת</li>
+                        <li>3 חדרי רחצה • תריסים חשמליים • תשתיות חכמות</li>
+                    </ul>
+                </article>
+                <article class="card prop reveal">
+                    <picture>
+                        <source srcset="/images/property-2.webp" type="image/webp">
+                        <img src="/images/property-2.jpg" alt="דירה משודרגת במרכז כפר יונה">
+                    </picture>
+                    <h3>דירה משודרגת במרכז כפר יונה</h3>
+                    <div class="meta"><span>מיקום מצוין למשפחות</span><span>שדרוגים איכותיים</span></div>
+                    <p class="small">פתרון מגורים נוח ושקט עם גישה מהירה לשירותים קהילתיים.</p>
+                </article>
+                <article class="card prop reveal">
+                    <picture>
+                        <source srcset="/images/property-3.webp" type="image/webp">
+                        <img src="/images/property-3.jpg" alt="דירת גן מרווחת בכפר יונה">
+                    </picture>
+                    <h3>דירת גן מרווחת</h3>
+                    <div class="meta"><span>חצר פרטית</span><span>מתאים למשפחות</span></div>
+                    <p class="small">מרחב מחייה נעים עם אפשרויות לאירוח וגינון.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- המלצות -->
+        <section id="testimonials" class="wrap section">
+            <h2 class="reveal">המלצות מלקוחות</h2>
+            <div class="grid two" style="margin-top:12px">
+                <div class="quote reveal">“אנג׳ל, תודה רבה! לא היינו יכולים לעבור את התהליך הזה בלעדייך. היית איתנו בכל
+                    שלב – החל ממציאת הדירה המושלמת עבורנו, דרך שיחות ארוכות עם היועץ למשכנתא, ועד לרגע האמת – חתימת
+                    החוזה.”</div>
+                <div class="quote reveal">“שקיפות וסבלנות אין-קץ, מענה מהיר לכל שאלה ותוצאות בשטח. מקצוענות שמרגישים.”
+                </div>
+            </div>
+        </section>
+
+        <!-- יצירת קשר -->
+        <section id="contact" class="wrap section">
+            <h2 class="reveal">יצירת קשר</h2>
+            <div class="contact" style="margin-top:12px">
+                <div class="card reveal">
+                    <p><strong>טלפון:</strong> <a href="tel:0504743405">050-4743405</a></p>
+                    <p><strong>ווטסאפ:</strong> <a href="https://wa.me/972504743405" target="_blank"
+                            rel="noopener">שליחת הודעה</a></p>
+                    <p><strong>פייסבוק:</strong> <a href="https://www.facebook.com/profile.php?id=100063509019163"
+                            target="_blank" rel="noopener">עמוד העסק</a></p>
+                    <p><strong>אינסטגרם:</strong> <a href="https://www.instagram.com/angelmorimbennaim" target="_blank"
+                            rel="noopener">פרופיל</a></p>
+                    <p class="small">זמינה לשאלות, הערכות שווי והכוונה ראשונית ללא התחייבות.</p>
+                </div>
+
+                <!-- טופס לשליחה ישירה לווטסאפ -->
+                <form id="wa-form" class="card reveal">
+                    <label>שם מלא
+                        <input type="text" name="name" required>
+                    </label>
+                    <label>טלפון
+                        <input type="tel" name="phone" required>
+                    </label>
+                    <label>אימייל
+                        <input type="email" name="email">
+                    </label>
+                    <label>איך אוכל לעזור?
+                        <textarea name="message" placeholder="מכירה / קנייה / הערכת שווי / ייעוץ משכנתא..."
+                            required></textarea>
+                    </label>
+                    <button class="btn" type="submit">שליחה</button>
+                    <div class="small">בלחיצה על “שליחה” תיפתח שיחת ווטסאפ עם פרטי הפנייה שמילאת.</div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            © 2025 אנג'ל מורים – יועצת נדל"ן בכפר יונה • טלפון: <a href="tel:0504743405">050-4743405</a>
         </div>
-      </div>
-      <!-- תמונת הירו — אותו מיקום/מבנה, רק מוגבל גובה -->
-      <img class="hero__img reveal" src="/images/myimage.jpg" alt="אנג'ל מורים – יועצת נדל&quot;ן בכפר יונה">
-    </div>
-  </header>
+    </footer>
 
-  <main>
-    <!-- עליי -->
-    <section id="about" class="wrap section">
-      <div class="grid two">
-        <div class="card reveal">
-          <h2>עליי</h2>
-          <p>אני אנג׳ל מורים, יועצת נדל״ן המתמחה בכפר יונה והסביבה. אני מלווה את לקוחותיי באופן אישי, מקצועי ושקוף – עם דגש על הקשבה, דיוק ותשומת לב אמיתית לכל פרט קטן.</p>
-          <div class="grid two" style="margin-top:8px">
-            <div class="feat"><i>✓</i><div><strong>דיוק והתאמה</strong><br>אפיון צרכים מדויק למציאת הנכס הנכון.</div></div>
-            <div class="feat"><i>✓</i><div><strong>תמחור ושיווק</strong><br>אסטרטגיית תמחור חכמה ושיווק נכסים איכותי.</div></div>
-            <div class="feat"><i>✓</i><div><strong>ניהול מו"מ</strong><br>ליווי מקצועי עד לחתימה בביטחון מלא.</div></div>
-            <div class="feat"><i>✓</i><div><strong>שקיפות</strong><br>ידע זמין, עדכונים שוטפים וניהול התהליך מקצה לקצה.</div></div>
-          </div>
-        </div>
-        <div class="card reveal">
-          <h2>שירותים</h2>
-          <ul class="small" style="margin:0 1rem 0 0">
-            <li>מכירת דירות ונכסים בכפר יונה</li>
-            <li>איתור וקנייה של דירות חלום למשפחות</li>
-            <li>ייעוץ למשקיעים והערכת תשואות</li>
-            <li>ליווי מול יועצי משכנתאות ובעלי מקצוע</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <!-- סקריפטים -->
+    <script>
+        // אפקט חשיפה עדינה בזמן גלילה
+        (function () {
+            const els = Array.from(document.querySelectorAll('.reveal'));
+            const obs = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) { e.target.classList.add('show'); obs.unobserve(e.target); }
+                });
+            }, { threshold: .12 });
+            els.forEach(el => obs.observe(el));
+        })();
 
-    <!-- נכסים נבחרים -->
-    <section id="props" class="wrap section">
-      <h2 class="reveal">נכסים נבחרים</h2>
-      <div class="grid three" style="margin-top:12px">
-        <article class="card prop reveal">
-          <picture>
-            <source srcset="/images/property-1.webp" type="image/webp">
-            <img src="/images/property-1.jpg" alt="פנטהאוז 4 חד' בפרויקט שרונה – כפר יונה">
-          </picture>
-          <h3>פנטהאוז יוקרתי 4 חד' (במקור 5) – פרויקט שרונה</h3>
-          <div class="meta"><span>135 מ״ר + מרפסת 32 מ״ר</span><span>נוף פתוח</span></div>
-          <ul class="small" style="margin:0 1rem 0 0">
-            <li>תקרות גבוהות ותכנון חכם</li>
-            <li>מטבח משודרג עם אי ומכשירי פרימיום</li>
-            <li>מערכת מיזוג מתקדמת</li>
-            <li>3 חדרי רחצה • תריסים חשמליים • תשתיות חכמות</li>
-          </ul>
-        </article>
-        <article class="card prop reveal">
-          <picture>
-            <source srcset="/images/property-2.webp" type="image/webp">
-            <img src="/images/property-2.jpg" alt="דירה משודרגת במרכז כפר יונה">
-          </picture>
-          <h3>דירה משודרגת במרכז כפר יונה</h3>
-          <div class="meta"><span>מיקום מצוין למשפחות</span><span>שדרוגים איכותיים</span></div>
-          <p class="small">פתרון מגורים נוח ושקט עם גישה מהירה לשירותים קהילתיים.</p>
-        </article>
-        <article class="card prop reveal">
-          <picture>
-            <source srcset="/images/property-3.webp" type="image/webp">
-            <img src="/images/property-3.jpg" alt="דירת גן מרווחת בכפר יונה">
-          </picture>
-          <h3>דירת גן מרווחת</h3>
-          <div class="meta"><span>חצר פרטית</span><span>מתאים למשפחות</span></div>
-          <p class="small">מרחב מחייה נעים עם אפשרויות לאירוח וגינון.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- המלצות -->
-    <section id="testimonials" class="wrap section">
-      <h2 class="reveal">המלצות מלקוחות</h2>
-      <div class="grid two" style="margin-top:12px">
-        <div class="quote reveal">“אנג׳ל, תודה רבה! לא היינו יכולים לעבור את התהליך הזה בלעדייך. היית איתנו בכל שלב – החל ממציאת הדירה המושלמת עבורנו, דרך שיחות ארוכות עם היועץ למשכנתא, ועד לרגע האמת – חתימת החוזה.”</div>
-        <div class="quote reveal">“שקיפות וסבלנות אין-קץ, מענה מהיר לכל שאלה ותוצאות בשטח. מקצוענות שמרגישים.”</div>
-      </div>
-    </section>
-
-    <!-- יצירת קשר -->
-    <section id="contact" class="wrap section">
-      <h2 class="reveal">יצירת קשר</h2>
-      <div class="contact" style="margin-top:12px">
-        <div class="card reveal">
-          <p><strong>טלפון:</strong> <a href="tel:0504743405">050-4743405</a></p>
-          <p><strong>ווטסאפ:</strong> <a href="https://wa.me/972504743405" target="_blank" rel="noopener">שליחת הודעה</a></p>
-          <p><strong>פייסבוק:</strong> <a href="https://www.facebook.com/profile.php?id=100063509019163" target="_blank" rel="noopener">עמוד העסק</a></p>
-          <p><strong>אינסטגרם:</strong> <a href="https://www.instagram.com/angelmorimbennaim" target="_blank" rel="noopener">פרופיל</a></p>
-          <p class="small">זמינה לשאלות, הערכות שווי והכוונה ראשונית ללא התחייבות.</p>
-        </div>
-
-        <!-- טופס לשליחה ישירה לווטסאפ -->
-        <form id="wa-form" class="card reveal">
-          <label>שם מלא
-            <input type="text" name="name" required>
-          </label>
-          <label>טלפון
-            <input type="tel" name="phone" required>
-          </label>
-          <label>אימייל
-            <input type="email" name="email">
-          </label>
-          <label>איך אוכל לעזור?
-            <textarea name="message" placeholder="מכירה / קנייה / הערכת שווי / ייעוץ משכנתא..." required></textarea>
-          </label>
-          <button class="btn" type="submit">שליחה</button>
-          <div class="small">בלחיצה על “שליחה” תיפתח שיחת ווטסאפ עם פרטי הפנייה שמילאת.</div>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      © 2025 אנג'ל מורים – יועצת נדל"ן בכפר יונה • טלפון: <a href="tel:0504743405">050-4743405</a>
-    </div>
-  </footer>
-
-  <!-- סקריפטים -->
-  <script>
-    // אפקט חשיפה עדינה בזמן גלילה
-    (function () {
-      const els = Array.from(document.querySelectorAll('.reveal'));
-      const obs = new IntersectionObserver((entries) => {
-        entries.forEach(e => {
-          if (e.isIntersecting) { e.target.classList.add('show'); obs.unobserve(e.target); }
+        // מסך טעינה – נשאר 600ms (לא מחכה לכל התמונות)
+        document.addEventListener('DOMContentLoaded', function () {
+            const MIN_SHOW = 600;
+            setTimeout(function () { document.body.classList.add('loaded'); }, MIN_SHOW);
         });
-      }, { threshold: .12 });
-      els.forEach(el => obs.observe(el));
-    })();
 
-    // מסך טעינה – נשאר 600ms (לא מחכה לכל התמונות)
-    document.addEventListener('DOMContentLoaded', function () {
-      const MIN_SHOW = 600;
-      setTimeout(function () { document.body.classList.add('loaded'); }, MIN_SHOW);
-    });
+        // טופס וואטסאפ בלבד
+        (function () {
+            const form = document.getElementById('wa-form');
+            const WHATSAPP_TARGET = '972504743405'; // יעד הווטסאפ (ללא סימנים)
 
-    // טופס וואטסאפ בלבד
-    (function () {
-      const form = document.getElementById('wa-form');
-      const WHATSAPP_TARGET = '972504743405'; // יעד הווטסאפ (ללא סימנים)
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const name = form.elements['name'].value.trim();
+                const phone = form.elements['phone'].value.trim();
+                const email = form.elements['email'].value.trim();
+                const message = form.elements['message'].value.trim();
 
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        const name = form.elements['name'].value.trim();
-        const phone = form.elements['phone'].value.trim();
-        const email = form.elements['email'].value.trim();
-        const message = form.elements['message'].value.trim();
+                if (!name || !phone || !message) {
+                    alert('נא למלא שם, טלפון ותוכן הודעה.');
+                    return;
+                }
 
-        if (!name || !phone || !message) {
-          alert('נא למלא שם, טלפון ותוכן הודעה.');
-          return;
-        }
+                const text =
+                    `בקשה חדשה מהאתר:\n\n` +
+                    `שם: ${name}\n` +
+                    `טלפון: ${phone}\n` +
+                    (email ? `אימייל: ${email}\n\n` : `\n`) +
+                    `הודעה:\n${message}`;
 
-        const text =
-          `בקשה חדשה מהאתר:\n\n` +
-          `שם: ${name}\n` +
-          `טלפון: ${phone}\n` +
-          (email ? `אימייל: ${email}\n\n` : `\n`) +
-          `הודעה:\n${message}`;
-
-        const url = `https://wa.me/${WHATSAPP_TARGET}?text=${encodeURIComponent(text)}`;
-        window.open(url, '_blank'); // במובייל יפתח אפליקציה, בדסקטופ – WhatsApp Web
-        form.reset();
-      });
-    })();
-  </script>
+                const url = `https://wa.me/${WHATSAPP_TARGET}?text=${encodeURIComponent(text)}`;
+                window.open(url, '_blank'); // במובייל יפתח אפליקציה, בדסקטופ – WhatsApp Web
+                form.reset();
+            });
+        })();
+    </script>
 </body>
+
 </html>
